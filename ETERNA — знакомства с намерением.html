@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ETERNA — знакомства с намерением</title>
+<meta name="description" content="ETERNA — онлайн-сервис знакомств и общения для совершеннолетних пользователей.">
+<link rel="stylesheet" href="style.css">
+<style>
+.age-gate{position:fixed;inset:0;background:rgba(20,18,17,.72);backdrop-filter:blur(8px);z-index:9999;display:flex;align-items:center;justify-content:center;padding:24px}
+.age-card{max-width:520px;width:100%;background:#fff;border-radius:24px;padding:34px;box-shadow:0 20px 70px rgba(0,0,0,.25)}
+.age-card h2{margin:0 0 12px}.age-card p{line-height:1.6;margin:0 0 22px}
+.age-actions{display:flex;gap:12px;flex-wrap:wrap}.age-actions button,.age-actions a{border:0;cursor:pointer;text-decoration:none}
+.age-exit{padding:14px 20px;border-radius:999px;background:#eee;color:#222}
+.age-hidden{display:none}
+.hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.access-steps{padding-left:24px;line-height:1.75}.access-steps li{margin-bottom:12px}.cards h3 i{display:inline-block;font-size:16px}.dark .btn{background:#fff;color:#222}
+</style>
+</head>
+<body>
+
+<div class="age-gate" id="ageGate" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+  <div class="age-card">
+    <small>ETERNA · 18+</small>
+    <h2 id="ageTitle">Вам уже исполнилось 18 лет?</h2>
+    <p>ETERNA — сервис знакомств, предназначенный только для совершеннолетних пользователей.</p>
+    <div class="age-actions">
+      <button class="btn" type="button" id="ageConfirm">Да, мне есть 18 лет</button>
+      <a class="age-exit" href="about:blank">Нет</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <b>ETERNA</b>
+  <nav>
+    <a href="#about">О сервисе</a>
+    <a href="#plans">Тарифы</a>
+    <a href="#docs">Документы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <small>ЗНАКОМСТВА С НАМЕРЕНИЕМ · 18+</small>
+  <h1>Возможно, вы<br>искали друг друга.</h1>
+  <p>ETERNA — пространство для знакомств, общения и взаимного выбора без лишнего шума.</p>
+  <div class="hero-actions"><a class="btn" href="https://t.me/eterna_dating_bot">Открыть ETERNA в Telegram</a> <a class="btn" href="#plans">Оплатить Membership</a></div>
+</section>
+
+<section id="about">
+  <small>О ETERNA</small>
+  <h2>Меньше случайности.<br>Больше смысла.</h2>
+  <p class="lead">Пользователи создают анкеты, знакомятся, выражают симпатию, получают взаимные мэтчи и общаются. Текущий сервис предоставляется через Telegram-бот <a href="https://t.me/eterna_dating_bot">@eterna_dating_bot</a>; этот сайт является информационной витриной. Подписка предоставляет платный доступ к дополнительным функциям сервиса. ETERNA предназначен только для лиц, достигших 18 лет.</p>
+</section>
+
+<section id="plans">
+  <small>ПОДПИСКА</small>
+  <h2>Выберите свой ETERNA</h2>
+  <div class="cards">
+    <article>
+      <b>ETERNA</b>
+      <h3>199 ₽ <i>/ 30 календарных дней</i></h3>
+      <ul>
+        <li>Рекомендации анкет</li>
+        <li>До 10 новых анкет в сутки</li>
+        <li>Входящие симпатии</li>
+        <li>Лайки, взаимные мэтчи и чат</li>
+      </ul>
+      <div class="soon">Доступ на 30 календарных дней</div>
+<p><a class="btn" href="https://t.me/eterna_dating_bot?start=buy_eterna">Оплатить ETERNA — 199 ₽</a></p>
+    </article>
+
+    <article class="dark">
+      <b>ETERNA+</b>
+      <h3>399 ₽ <i>/ 30 календарных дней</i></h3>
+      <ul>
+        <li>Просмотр без дневного лимита</li>
+        <li>Расширенные фильтры</li>
+        <li>Возврат пропущенной анкеты</li>
+        <li>Режим «Невидимка»</li>
+        <li>Лайки, мэтчи и чат</li>
+      </ul>
+      <div class="soon">Доступ на 30 календарных дней</div>
+<p><a class="btn" href="https://t.me/eterna_dating_bot?start=buy_eterna_plus">Оплатить ETERNA+ — 399 ₽</a></p>
+    </article>
+  </div>
+  <p class="note">Оплата через YooKassa: кнопка откроет Telegram-бота для привязки покупки к вашему аккаунту. Укажите email для чека, затем перейдите к оплате. После подтверждения успешной оплаты Membership активируется автоматически.</p>
+  <p class="note">Стоимость, срок доступа и состав тарифа показываются до оплаты. Автоматическое продление, если оно доступно для выбранного способа оплаты, подключается только после явного согласия пользователя. Сумма, периодичность следующего списания и способ отключения отображаются до оплаты и подключения автопродления.</p>
+</section>
+
+<section class="soft" id="how-it-works">
+  <small>ОКАЗАНИЕ УСЛУГ</small>
+  <h2>Как начать и получить доступ</h2>
+  <p class="lead">Сайт → Telegram-бот → создание анкеты → выбор тарифа → показ стоимости и условий → оплата доступным способом → после подтверждения успешной оплаты активация доступа на 30 календарных дней.</p>
+  <ol class="access-steps">
+    <li>Откройте Telegram-бот <a href="https://t.me/eterna_dating_bot">@eterna_dating_bot</a> с этого сайта.</li>
+    <li>Создайте анкету в боте.</li>
+    <li>Выберите тариф: ETERNA — 199 ₽ за 30 календарных дней или ETERNA+ — 399 ₽ за 30 календарных дней.</li>
+    <li>Ознакомьтесь с составом тарифа, стоимостью, сроком доступа, <a href="offer.html">офертой</a> и условиями оплаты и автопродления.</li>
+    <li>Оплатите выбранный тариф доступным способом. Оплата производится в безналичном порядке доступным способом, указанным в интерфейсе Telegram-бота до оплаты.</li>
+    <li>После подтверждения успешной оплаты получите доступ на 30 календарных дней с момента активации.</li>
+  </ol>
+  <p><a class="btn" href="https://t.me/eterna_dating_bot">Перейти в Telegram-бот</a></p>
+  <p class="lead">После подтверждения успешной оплаты доступ к оплаченным функциям активируется для аккаунта пользователя в Telegram-боте на 30 календарных дней с момента активации. Услуга предоставляется дистанционно в электронной форме. Физическая доставка не осуществляется.</p>
+</section>
+
+<section id="docs">
+  <small>ДОКУМЕНТЫ</small>
+  <h2>Правовая информация</h2>
+
+  <details>
+    <summary>Публичная оферта</summary>
+    <div class="legal">
+      <p>Условия предоставления платного доступа к дополнительным функциям ETERNA, порядок оплаты, отмены подписки и возврата денежных средств закреплены в публичной оферте.</p>
+      <p><a class="btn" href="offer.html">Открыть публичную оферту</a></p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Политика обработки персональных данных</summary>
+    <div class="legal">
+      <p>Политика определяет порядок обработки и защиты персональных данных пользователей онлайн-сервиса ETERNA.</p>
+      <p>Оператор персональных данных: ИП Норева Юлия Николаевна, ИНН 471304760530.</p>
+      <p><a class="btn" href="privacy.html">Открыть политику обработки персональных данных</a></p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Отмена подписки и возврат</summary>
+    <div class="legal">
+      <p>Для отключения последующих списаний пользователь может использовать предусмотренный в сервисе способ отмены либо обратиться в поддержку ETERNA: <a href="mailto:an.piterskaya@yandex.ru">an.piterskaya@yandex.ru</a>.</p>
+      <p>После отключения автоматического продления уже оплаченный доступ сохраняется до окончания оплаченного периода.</p>
+      <p>Требование о возврате денежных средств можно направить на адрес поддержки с информацией, позволяющей идентифицировать пользователя и соответствующий платеж.</p>
+      <p>Возврат осуществляется в случаях и порядке, предусмотренных законодательством Российской Федерации, с учетом фактически оказанных услуг. Подробные условия содержатся в <a href="offer.html">публичной оферте</a>.</p>
+    </div>
+  </details>
+</section>
+
+<section id="contacts" class="contact">
+  <div><small>КОНТАКТЫ И РЕКВИЗИТЫ</small><h2>Связаться с ETERNA</h2></div>
+  <div class="info">
+    <p><span>Telegram-бот</span><a href="https://t.me/eterna_dating_bot">@eterna_dating_bot</a></p>
+    <p><span>Исполнитель</span>ИП Норева Юлия Николаевна</p>
+    <p><span>ИНН</span>471304760530</p>
+    <p><span>ОГРНИП</span>326470400070567</p>
+    <p><span>Телефон</span><a href="tel:+79992199787">+7 999 219-97-87</a></p>
+    <p><span>Поддержка</span><a href="mailto:an.piterskaya@yandex.ru">an.piterskaya@yandex.ru</a></p>
+    <p><span>Оферта</span><a href="offer.html">Публичная оферта</a></p>
+    <p><span>Персональные данные</span><a href="privacy.html">Политика обработки персональных данных</a></p>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 ETERNA · Онлайн-сервис знакомств · 18+ · ИП Норева Юлия Николаевна</footer>
+
+<script>
+(function () {
+  var gate = document.getElementById('ageGate');
+  var confirm = document.getElementById('ageConfirm');
+  try {
+    if (localStorage.getItem('eterna_age_confirmed') === 'yes') gate.classList.add('age-hidden');
+  } catch (e) {}
+  confirm.addEventListener('click', function () {
+    try { localStorage.setItem('eterna_age_confirmed', 'yes'); } catch (e) {}
+    gate.classList.add('age-hidden');
+  });
+})();
+</script>
+</body>
+</html>
